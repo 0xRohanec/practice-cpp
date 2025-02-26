@@ -4,24 +4,24 @@ using namespace std;
 class car{
 private:
 string brand;
+string model;
 public:
-    string model;
-    int year;
-    string getbrand(){
-        return brand;
-    }
-    void brandname(string s){
-        brand=s;
-    }
+   car(string brand,string model){
+    this->brand=brand;
+    this->model=model;
+   }
+   car(){
+    brand="toyota";
+    model="fortuner";
+   } 
+   void display(){
+    cout<<brand<<" "<<model<<endl;
+   }
 };
 int main()
 {
-    car obj;
-    obj.brandname("maruti");
-    obj.model="alto";
-    obj.year=2015;
-    cout<<"brand name : "<< obj.getbrand()<<endl;
-    cout<<"model name : "<<obj.model<<endl;
-    cout<<"manufactring year  : "<<obj.year<<endl;
-    return 0;
+    car obj("maruti","alto");
+    car obj1;
+    obj.display();
+    obj1.display();
 }

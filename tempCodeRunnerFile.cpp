@@ -1,1 +1,4 @@
-    // cout<<"brand name : "<<obj.brandname<<endl;
+ void brandname(string s){
+        cin>>s;
+        brand=s;
+    }
