@@ -1,4 +1,3 @@
- void brandname(string s){
-        cin>>s;
-        brand=s;
-    }
+customer C;
+    // C=A;
+    // C.display();
